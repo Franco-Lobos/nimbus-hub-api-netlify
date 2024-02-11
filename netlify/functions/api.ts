@@ -48,8 +48,9 @@ api.use('/.netlify/functions/', router());
 // Error-handling middleware
 api.use(manageNotFound);
 
-// export const handler = serverless(api);
-export default serverless(api);
+module.exports.handler = serverless(api);
+//  export const handler = serverless(api);
+
 // const server = http.createServer(api);
 // export default function () {
 //     server.listen(, () => {
