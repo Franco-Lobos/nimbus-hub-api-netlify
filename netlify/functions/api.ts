@@ -50,7 +50,6 @@ api.use(manageNotFound);
 
 export const handler = serverless(api);
 
-
 // const server = http.createServer(api);
 // export default function () {
 //     server.listen(, () => {
