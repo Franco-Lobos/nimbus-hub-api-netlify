@@ -42,8 +42,8 @@ mongoose.connection.on('disconnected', function () {
 });
 
 
-api.use('/api/', router());
-api.use('/.netlify/functions/', router());
+// api.use('/api/', router());
+api.use('/.netlify/functions/api', router());
 
 // Error-handling middleware
 api.use(manageNotFound);
