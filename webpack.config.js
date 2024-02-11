@@ -20,16 +20,16 @@
 //   },
 // ];
 // webpack.config.js
-const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
-import sanityClient from '@sanity/client';
+// const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
+// import sanityClient from '@sanity/client';
 
 
-module.exports = {
-    target: 'node',
-	// Other rules...
-	plugins: [
-        new NodePolyfillPlugin({
-			excludeAliases: ['tty']
-		})
-	]
-};
+// module.exports = {
+//     target: 'node',
+// 	// Other rules...
+// 	plugins: [
+//         new NodePolyfillPlugin({
+// 			excludeAliases: ['tty']
+// 		})
+// 	]
+// };
