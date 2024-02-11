@@ -1,6 +1,7 @@
 [build]
-command = "npm run build"
+command = "npm run dev"
 publish = "public"
+
 
 # Set immutable caching for static files, because they have fingerprinted filenames
 
@@ -10,3 +11,12 @@ for = "/build/*"
 [headers.values]
 
 "Cache-Control" = "public, max-age=31560000, immutable"
+
+[functions]
+  external_node_modules = ["express"]
+  node_bundler = "esbuild"
+[[redirects]]
+  force = true
+  from = "/api/*"
+  status = 200
+  to = "/.netlify/functions/api/:splat"
