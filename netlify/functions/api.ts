@@ -43,13 +43,13 @@ mongoose.connection.on('disconnected', function () {
 
 
 api.use('/api/', router());
-api.use('/.netlify/functions/', router);
+api.use('/.netlify/functions/', router());
 
 // Error-handling middleware
 api.use(manageNotFound);
 
-export const handler = serverless(api);
-
+// export const handler = serverless(api);
+export default serverless(api);
 // const server = http.createServer(api);
 // export default function () {
 //     server.listen(, () => {
