@@ -81,4 +81,5 @@ api.use(manageNotFound);
 //   console.log(`Express server listening on port ${expressPort}`);
 // });
 
-export const handler = serverless(api);
+// export const handler = serverless(api);
+export default serverless(api);
