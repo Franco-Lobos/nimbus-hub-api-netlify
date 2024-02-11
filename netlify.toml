@@ -1,6 +1,6 @@
 [build]
 command = "npm run net-start"
-publish = "public"
+publish = "public/build"
 
 # Set immutable caching for static files, because they have fingerprinted filenames
 

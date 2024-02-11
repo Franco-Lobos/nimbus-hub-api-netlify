@@ -47,7 +47,4 @@ api.use('/api/', router());
 // Error-handling middleware
 api.use(manageNotFound);
 
-// export const handler = serverless(api);
-module.exports = function handler () {
-    serverless(api);
-};
+export const handler = serverless(api);
