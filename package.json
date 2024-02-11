@@ -4,7 +4,7 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "remix build",
+    "net-start": "remix build",
     "dev": "remix dev --manual -c \"ntl dev --framework=#static\"",
     "start": "netlify serve build/index.js",
     "typecheck": "tsc -b"
