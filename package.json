@@ -12,6 +12,7 @@
   "dependencies": {
     "@netlify/edge-functions": "^2.0.0",
     "@netlify/functions": "^2.5.1",
+    "@netlify/plugin-nextjs": "^4.41.3",
     "@netlify/remix-edge-adapter": "^3.0.0",
     "@netlify/remix-runtime": "^2.0.0",
     "@remix-run/css-bundle": "^2.4.1",
