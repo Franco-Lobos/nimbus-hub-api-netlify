@@ -2,11 +2,10 @@
 command = "npm run net-start"
 publish = "public"
 
-
 # Set immutable caching for static files, because they have fingerprinted filenames
 
 [[headers]]
-for = "/public/build/*"
+for = "/build/*"
 
 [headers.values]
 
